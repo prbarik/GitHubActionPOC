@@ -1,0 +1,12 @@
+{
+  "name": "My-javascript-actions-app",
+  "description": "This action prints \"Hello JavaScriptAction\" or \"Hello\" + the name of a person to greet to the log. To learn how this action was built, see \"[Creating a JavaScript action](https://help.github.com/en/articles/creating-a-javascript-action)\" in the GitHub Help documentation.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
