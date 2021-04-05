@@ -12,7 +12,7 @@ jobs:
         id: App1
         uses: ./
         with:
-          MY_APP_NAME: "JavaScript Action APP"
+          App-creation: "JavaScript Action APP"
       # Application Runtime Output
       - name: Get the time Of the App Creation
         run: echo "The time was ${{ steps.App1.outputs.time }}"
