@@ -1,14 +1,13 @@
-name: 'Setup Node.js environment'
-description: 'Setup a Javascript Action'
-author: 'prbarik'
-inputs: # input Parameters are stored as the env variables in CI server
-  App-creation: # id of input
-    description: 'Set Up a new APP'
+name: 'Hello World'
+description: 'Greet someone and record the time'
+inputs: # input parameters are stored as environment variables
+  who-to-greet:  # id of input
+    description: 'Who to greet'
     required: true
-    default: 'false'
+    default: 'World'
 outputs:
-  time: # id of the output
-    description: "The time App created"  
+  time: # id of output
+    description: 'The time we greeted you'
 runs:
   using: 'node12'
   main: 'index.js'

@@ -1,18 +1,15 @@
-const core = require ('@actions/core');
-const github = require ('@actions/github');
+const core = require('@actions/core');
+const github = require('@actions/github');
 
 try {
-    // new App created using JavaScript Action
-    const ApptoCreate = core.getInput('App-creation');
-    consolelog(`Heloo ${ApptoCreate}!!!`);
-    const time = (new Date()).toTimeString();
-    core.setOutput("App created at: ", time)
-
-    // Get the JSON webhook playload for the event triggered for this workflow
-    const playload = JSON.stringify(github.context.playload, undefined, 2)
-    console.log(`The Event playload: ${playload}`);
-    
+  // `who-to-greet` input defined in action metadata file
+  const nameToGreet = core.getInput('who-to-greet');
+  console.log(`Hello ${nameToGreet}!`);
+  const time = (new Date()).toTimeString();
+  core.setOutput("time", time);
+  // Get the JSON webhook payload for the event that triggered the workflow
+  const payload = JSON.stringify(github.context.payload, undefined, 2)
+  console.log(`The event payload: ${payload}`);
 } catch (error) {
-  core.setFailed(error.message)
-    
+  core.setFailed(error.message);
 }

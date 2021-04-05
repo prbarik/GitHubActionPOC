@@ -1,31 +1,25 @@
 {
-  "name": "githubactionpoc",
+  "name": "hello-world-javascript-action",
   "version": "1.0.0",
-  "description": "This action prints \"Hello World\" or \"Hello\" + the name of a person to greet to the log. To learn how this action was built, see \"[Creating a JavaScript action](https://help.github.com/en/articles/creating-a-javascript-action)\" in the GitHub Help documentation.",
+  "description": "This action prints \"Hello World\" or \"Hello\" + the name of a person to greet to the log.",
   "main": "index.js",
-  "dependencies": {
-    "@actions/core": "^1.2.6",
-    "@actions/github": "^4.0.0",
-    "before-after-hook": "^2.2.1",
-    "deprecation": "^2.3.1",
-    "is-plain-object": "^5.0.0",
-    "node-fetch": "^2.6.1",
-    "once": "^1.4.0",
-    "tunnel": "^0.0.6",
-    "universal-user-agent": "^6.0.0",
-    "wrappy": "^1.0.2"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/prbarik/GitHubActionPOC.git"
+    "url": "git+https://github.com/actions/hello-world-javascript-action.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/prbarik/GitHubActionPOC/issues"
+    "url": "https://github.com/actions/hello-world-javascript-action/issues"
   },
-  "homepage": "https://github.com/prbarik/GitHubActionPOC#readme"
+  "homepage": "https://github.com/actions/hello-world-javascript-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^1.1.0"
+  },
+  "devDependencies": {}
 }
