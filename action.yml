@@ -1,0 +1,14 @@
+name: 'Setup Node.js environment'
+description: 'Setup a Javascript Action'
+author: 'prbarik'
+inputs: # input Parameters are stored as the env variables in CI server
+  App-creation:
+    description: 'Set Up a new APP'
+    required: true
+    default: 'false'
+outputs:
+  time: # id of the output
+    description: "The time App created"  
+runs:
+  using: 'node12'
+  main: 'index.js'
