@@ -2,7 +2,7 @@ name: 'Setup Node.js environment'
 description: 'Setup a Javascript Action'
 author: 'prbarik'
 inputs: # input Parameters are stored as the env variables in CI server
-  App-creation:
+  App-creation: # id of input
     description: 'Set Up a new APP'
     required: true
     default: 'false'

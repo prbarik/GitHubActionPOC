@@ -1,0 +1,18 @@
+name: A workflow for my JavaScript Aactio App
+on: push
+
+jobs:
+  build:
+    name: JavaScript action
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2 # GITHUB_WORKSPACE
+      - name: Javascript Actio App Creation Step
+        id: App1
+        uses: ./
+        with:
+          MY_APP_NAME: "JavaScript Action APP"
+      # Application Runtime Output
+      - name: Get the time Of the App Creation
+        run: echo "The time was ${{ steps.App1.outputs.time }}"
