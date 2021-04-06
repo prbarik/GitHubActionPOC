@@ -1,5 +1,5 @@
 {
-  "name": "hello-world-javascript-action",
+  "name": "my-first-javascript-action",
   "version": "1.0.0",
   "description": "This action prints \"Hello World\" or \"Hello\" + the name of a person to greet to the log.",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/actions/hello-world-javascript-action.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "prbarik",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/actions/hello-world-javascript-action/issues"
