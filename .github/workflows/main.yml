@@ -3,15 +3,15 @@ on: [push]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Say hello to javascript Action App
     steps:
     - name: checkout
       uses: actions/checkout@v2 # $GITHUB_WORKSPACE
-    - name: Hello world action step
+    - name: javascript action step
       id: hello
       uses: ./
       with:
-        who-to-greet: 'Chad Crowell'
+        who-to-greet: 'Priyaranjan Barik'
     # Use the output from the `hello` step
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"

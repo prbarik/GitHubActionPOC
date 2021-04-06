@@ -1,4 +1,4 @@
-name: 'Hello World'
+name: 'Hello GitHub Action'
 description: 'Greet someone and record the time'
 inputs: # input parameters are stored as environment variables
   who-to-greet:  # id of input
