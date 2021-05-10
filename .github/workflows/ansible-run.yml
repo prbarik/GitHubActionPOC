@@ -11,8 +11,10 @@ jobs:
     steps:
     - name: checkout
       uses: actions/checkout@v2 # $GITHUB_WORKSPACE
-    - name: Execute Ansible Playbook
-      #uses: saubermacherag/ansible-playbook-docker-action@v1.3
-      with:
-        playbookName: .github/playbook.yml
-        verbosity: vv
+  playbooks:
+    name: Playbooks
+    runs-on: self-hosted
+    strategy:
+      matrix:
+        include:
+          - playbook: .github/playbook.yml
